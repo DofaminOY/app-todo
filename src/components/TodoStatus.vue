@@ -12,10 +12,14 @@
       
        
     </ul>
+    
+    
   </div>
+  
 </template>
 
 <script>
+
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: {
@@ -29,7 +33,10 @@ export default {
     changeTab() {
       this.changeCompleted();
       
-    }
+    },
+     
+   
+  
   }
   
 };

@@ -16,16 +16,21 @@
           type="text"
           class="col-7 form-control"
         />
+        
         <div>
+          
           <input :checked="completed" class="mr-1" @change="onCompleted" type="checkbox" />
           <label class>Completed</label>
         </div>
+        
       </div>
       <div class="row align-items-center">
         <button @click="updateTodoI(todo)" class="btn btn-primary mx-2">{{editing?'Update':'Edit'}}</button>
         <button @click="deleteTodo(todo.id)" class="btn btn-danger">Delete</button>
       </div>
+      
     </div>
+    
   </div>
 </template>
 
@@ -41,7 +46,6 @@ export default {
     todo: {
       
     }
-    
   },
   data() {
     
@@ -50,6 +54,7 @@ export default {
       date: new Date(),
       todoText: "",
       editing: false,
+      
       completed: false
       
     };
@@ -72,7 +77,13 @@ export default {
        
     },
     todoTextChange(e) {
+      
+      
       this.todoText = e.target.value;
+     
+      
+      
+      
     },
     updateTodoI(todo) {
       this.editing = this.editing == true ? false : true;

@@ -4,6 +4,7 @@
     <TodoInput />
     <TodoStatus />
     <TodoList />
+   
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import TodoList from "@/components/TodoList";
 import TodoStatus from "@/components/TodoStatus";
 
 export default {
+ 
 
   name: "App",
   components: {
